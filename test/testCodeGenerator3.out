@@ -1,0 +1,194 @@
+INFO  21:01:58,535 - Compiling source file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testCodeGenerator3.mj
+INFO  21:01:58,573 - #2 program
+INFO  21:01:58,573 - #50 testProgram
+INFO  21:01:58,573 - #50 int
+INFO  21:01:58,574 - #50 niz
+INFO  21:01:58,574 - #43 [
+INFO  21:01:58,574 - #44 ]
+INFO  21:01:58,574 - #35 ;
+INFO  21:01:58,575 - #41 {
+INFO  21:01:58,575 - #15 void
+INFO  21:01:58,575 - #50 main
+INFO  21:01:58,575 - #39 (
+INFO  21:01:58,575 - #40 )
+INFO  21:01:58,576 - #50 int
+INFO  21:01:58,576 - #50 niz2
+INFO  21:01:58,576 - #43 [
+INFO  21:01:58,576 - #44 ]
+INFO  21:01:58,576 - #35 ;
+INFO  21:01:58,577 - #50 int
+INFO  21:01:58,577 - #50 a
+INFO  21:01:58,577 - #37 ,
+INFO  21:01:58,577 - #50 b
+INFO  21:01:58,578 - #37 ,
+INFO  21:01:58,578 - #50 c
+INFO  21:01:58,578 - #35 ;
+INFO  21:01:58,578 - #41 {
+INFO  21:01:58,578 - #50 niz
+INFO  21:01:58,579 - #46 =
+INFO  21:01:58,579 - #11 new
+INFO  21:01:58,579 - #50 int
+INFO  21:01:58,579 - #43 [
+INFO  21:01:58,579 - #49 5
+INFO  21:01:58,579 - #44 ]
+INFO  21:01:58,580 - #35 ;
+INFO  21:01:58,580 - #50 niz2
+INFO  21:01:58,580 - #46 =
+INFO  21:01:58,581 - #11 new
+INFO  21:01:58,581 - #50 int
+INFO  21:01:58,581 - #43 [
+INFO  21:01:58,581 - #49 5
+INFO  21:01:58,581 - #44 ]
+INFO  21:01:58,581 - #35 ;
+INFO  21:01:58,581 - #50 niz
+INFO  21:01:58,581 - #43 [
+INFO  21:01:58,581 - #49 0
+INFO  21:01:58,581 - #44 ]
+INFO  21:01:58,581 - #46 =
+INFO  21:01:58,581 - #49 10
+INFO  21:01:58,581 - #35 ;
+INFO  21:01:58,581 - #50 niz
+INFO  21:01:58,582 - #43 [
+INFO  21:01:58,582 - #49 1
+INFO  21:01:58,582 - #44 ]
+INFO  21:01:58,582 - #46 =
+INFO  21:01:58,582 - #49 11
+INFO  21:01:58,583 - #35 ;
+INFO  21:01:58,583 - #50 niz
+INFO  21:01:58,583 - #43 [
+INFO  21:01:58,583 - #49 2
+INFO  21:01:58,583 - #44 ]
+INFO  21:01:58,583 - #46 =
+INFO  21:01:58,583 - #49 12
+INFO  21:01:58,583 - #35 ;
+INFO  21:01:58,583 - #50 niz
+INFO  21:01:58,583 - #43 [
+INFO  21:01:58,583 - #49 3
+INFO  21:01:58,584 - #44 ]
+INFO  21:01:58,584 - #46 =
+INFO  21:01:58,584 - #49 13
+INFO  21:01:58,584 - #35 ;
+INFO  21:01:58,584 - #50 niz
+INFO  21:01:58,584 - #43 [
+INFO  21:01:58,584 - #49 4
+INFO  21:01:58,584 - #44 ]
+INFO  21:01:58,584 - #46 =
+INFO  21:01:58,584 - #49 14
+INFO  21:01:58,584 - #35 ;
+INFO  21:01:58,584 - #43 [
+INFO  21:01:58,585 - #50 niz2
+INFO  21:01:58,585 - #43 [
+INFO  21:01:58,585 - #49 0
+INFO  21:01:58,585 - #44 ]
+INFO  21:01:58,585 - #37 ,
+INFO  21:01:58,585 - #37 ,
+INFO  21:01:58,586 - #50 niz2
+INFO  21:01:58,586 - #43 [
+INFO  21:01:58,586 - #49 3
+INFO  21:01:58,586 - #44 ]
+INFO  21:01:58,586 - #37 ,
+INFO  21:01:58,586 - #50 niz2
+INFO  21:01:58,586 - #43 [
+INFO  21:01:58,586 - #49 4
+INFO  21:01:58,586 - #44 ]
+INFO  21:01:58,586 - #37 ,
+INFO  21:01:58,586 - #50 niz2
+INFO  21:01:58,586 - #43 [
+INFO  21:01:58,586 - #49 1
+INFO  21:01:58,586 - #44 ]
+INFO  21:01:58,587 - #44 ]
+INFO  21:01:58,587 - #46 =
+INFO  21:01:58,587 - #50 niz
+INFO  21:01:58,587 - #35 ;
+INFO  21:01:58,587 - #12 print
+INFO  21:01:58,587 - #39 (
+INFO  21:01:58,587 - #50 niz2
+INFO  21:01:58,587 - #43 [
+INFO  21:01:58,587 - #49 0
+INFO  21:01:58,587 - #44 ]
+INFO  21:01:58,587 - #40 )
+INFO  21:01:58,587 - #35 ;
+INFO  21:01:58,587 - #12 print
+INFO  21:01:58,587 - #39 (
+INFO  21:01:58,587 - #50 niz2
+INFO  21:01:58,588 - #43 [
+INFO  21:01:58,588 - #49 1
+INFO  21:01:58,588 - #44 ]
+INFO  21:01:58,588 - #40 )
+INFO  21:01:58,588 - #35 ;
+INFO  21:01:58,588 - #12 print
+INFO  21:01:58,588 - #39 (
+INFO  21:01:58,588 - #50 niz2
+INFO  21:01:58,588 - #43 [
+INFO  21:01:58,588 - #49 2
+INFO  21:01:58,588 - #44 ]
+INFO  21:01:58,588 - #40 )
+INFO  21:01:58,588 - #35 ;
+INFO  21:01:58,588 - #12 print
+INFO  21:01:58,588 - #39 (
+INFO  21:01:58,588 - #50 niz2
+INFO  21:01:58,588 - #43 [
+INFO  21:01:58,588 - #49 3
+INFO  21:01:58,589 - #44 ]
+INFO  21:01:58,589 - #40 )
+INFO  21:01:58,590 - #35 ;
+INFO  21:01:58,590 - #12 print
+INFO  21:01:58,590 - #39 (
+INFO  21:01:58,590 - #50 niz2
+INFO  21:01:58,590 - #43 [
+INFO  21:01:58,590 - #49 4
+INFO  21:01:58,590 - #44 ]
+INFO  21:01:58,590 - #40 )
+INFO  21:01:58,590 - #35 ;
+INFO  21:01:58,590 - #12 print
+INFO  21:01:58,590 - #39 (
+INFO  21:01:58,590 - #50 a
+INFO  21:01:58,590 - #40 )
+INFO  21:01:58,590 - #35 ;
+INFO  21:01:58,590 - #12 print
+INFO  21:01:58,591 - #39 (
+INFO  21:01:58,591 - #50 b
+INFO  21:01:58,591 - #40 )
+INFO  21:01:58,591 - #35 ;
+INFO  21:01:58,591 - #12 print
+INFO  21:01:58,591 - #39 (
+INFO  21:01:58,591 - #50 c
+INFO  21:01:58,591 - #40 )
+INFO  21:01:58,591 - #35 ;
+INFO  21:01:58,591 - #14 return
+INFO  21:01:58,591 - #35 ;
+INFO  21:01:58,591 - #42 }
+INFO  21:01:58,592 - #42 }
+INFO  21:01:58,601 - Deklarisana promenljiva niz na liniji 4
+INFO  21:01:58,602 - Obradjuje se funkcija main na liniji 7
+INFO  21:01:58,602 - Deklarisana promenljiva niz2 na liniji 8
+INFO  21:01:58,602 - Deklarisana promenljiva a tipa int na liniji 9
+INFO  21:01:58,602 - Deklarisana promenljiva b tipa int na liniji 9
+INFO  21:01:58,602 - Deklarisana promenljiva c tipa int na liniji 9
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: , 0, 1 
+Prog testProgram: notype, 0, 1 
+   Var niz: Arr of int, 0, 0 
+   Meth main: notype, 0, 0 
+      Var niz2: Arr of int, 0, 1 
+      Var a: int, 1, 1 
+      Var b: int, 2, 1 
+      Var c: int, 3, 1 
+
+
+
+INFO  21:01:58,603 - Generating bytecode file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testCodeGenerator3.obj
+INFO  21:01:58,606 - Parsiranje uspesno zavrseno!

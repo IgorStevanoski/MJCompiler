@@ -1,0 +1,101 @@
+INFO  20:59:07,921 - Compiling source file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testSemanticF2.mj
+INFO  20:59:07,959 - #2 program
+INFO  20:59:07,959 - #50 testProgram
+INFO  20:59:07,959 - #7 const
+INFO  20:59:07,960 - #50 char
+INFO  20:59:07,960 - #50 c
+INFO  20:59:07,961 - #46 =
+INFO  20:59:07,961 - #48 c
+INFO  20:59:07,961 - #37 ,
+INFO  20:59:07,961 - #50 b
+INFO  20:59:07,961 - #46 =
+INFO  20:59:07,961 - #48 b
+INFO  20:59:07,961 - #35 ;
+INFO  20:59:07,961 - #7 const
+INFO  20:59:07,962 - #50 int
+INFO  20:59:07,962 - #50 abc
+INFO  20:59:07,962 - #46 =
+INFO  20:59:07,962 - #49 10
+INFO  20:59:07,962 - #35 ;
+INFO  20:59:07,962 - #7 const
+INFO  20:59:07,962 - #50 bool
+INFO  20:59:07,962 - #50 t
+INFO  20:59:07,963 - #46 =
+INFO  20:59:07,963 - #47 true
+INFO  20:59:07,963 - #35 ;
+INFO  20:59:07,963 - #50 int
+INFO  20:59:07,963 - #50 a
+INFO  20:59:07,963 - #35 ;
+INFO  20:59:07,964 - #50 int
+INFO  20:59:07,964 - #50 p
+INFO  20:59:07,964 - #43 [
+INFO  20:59:07,964 - #44 ]
+INFO  20:59:07,964 - #35 ;
+INFO  20:59:07,965 - #50 char
+INFO  20:59:07,965 - #50 ad
+INFO  20:59:07,965 - #43 [
+INFO  20:59:07,965 - #44 ]
+INFO  20:59:07,965 - #37 ,
+INFO  20:59:07,965 - #50 ba
+INFO  20:59:07,965 - #43 [
+INFO  20:59:07,965 - #44 ]
+INFO  20:59:07,965 - #35 ;
+INFO  20:59:07,966 - #41 {
+INFO  20:59:07,966 - #15 void
+INFO  20:59:07,966 - #50 main
+INFO  20:59:07,966 - #39 (
+INFO  20:59:07,966 - #40 )
+INFO  20:59:07,966 - #41 {
+INFO  20:59:07,967 - #50 a
+INFO  20:59:07,967 - #46 =
+INFO  20:59:07,967 - #49 5
+INFO  20:59:07,968 - #35 ;
+INFO  20:59:07,968 - #12 print
+INFO  20:59:07,968 - #39 (
+INFO  20:59:07,968 - #50 a
+INFO  20:59:07,969 - #32 +
+INFO  20:59:07,969 - #50 c
+INFO  20:59:07,969 - #40 )
+INFO  20:59:07,970 - #35 ;
+INFO  20:59:07,970 - #42 }
+INFO  20:59:07,970 - #42 }
+INFO  20:59:07,980 - Deklarisana konstanta c sa vrednoscu: c na liniji 4
+INFO  20:59:07,980 - Deklarisana konstanta b sa vrednoscu: b na liniji 4
+INFO  20:59:07,980 - Deklarisana konstanta abc sa vrednoscu: 10 na liniji 5
+INFO  20:59:07,981 - Deklarisana konstanta t sa vrednoscu: true na liniji 6
+INFO  20:59:07,981 - Deklarisana promenljiva a tipa int na liniji 7
+INFO  20:59:07,981 - Deklarisana promenljiva p na liniji 8
+INFO  20:59:07,981 - Deklarisana promenljiva ad na liniji 9
+INFO  20:59:07,982 - Deklarisana promenljiva ba na liniji 9
+INFO  20:59:07,982 - Obradjuje se funkcija main na liniji 12
+ERROR 20:59:07,982 - Greska na liniji 17 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 20:59:07,982 - Greska na liniji 17 izraz u print naredbi mora biti tipa int ili char.
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: , 0, 1 
+Prog testProgram: notype, 0, 1 
+   Con c: char, 99, 0 
+   Con b: char, 98, 0 
+   Con abc: int, 10, 0 
+   Con t: , 1, 0 
+   Var a: int, 0, 0 
+   Var p: Arr of int, 1, 0 
+   Var ad: Arr of char, 2, 0 
+   Var ba: Arr of char, 3, 0 
+   Meth main: notype, 0, 0 
+
+
+
+ERROR 20:59:07,983 - Parsiranje NIJE uspesno zavrseno!

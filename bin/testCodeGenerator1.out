@@ -1,0 +1,237 @@
+INFO  21:00:42,649 - Compiling source file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testCodeGenerator1.mj
+INFO  21:00:42,687 - #2 program
+INFO  21:00:42,687 - #50 testProgram
+INFO  21:00:42,687 - #7 const
+INFO  21:00:42,688 - #50 int
+INFO  21:00:42,688 - #50 nula
+INFO  21:00:42,689 - #46 =
+INFO  21:00:42,689 - #49 0
+INFO  21:00:42,689 - #35 ;
+INFO  21:00:42,689 - #7 const
+INFO  21:00:42,689 - #50 int
+INFO  21:00:42,689 - #50 jedan
+INFO  21:00:42,689 - #46 =
+INFO  21:00:42,690 - #49 1
+INFO  21:00:42,690 - #35 ;
+INFO  21:00:42,690 - #7 const
+INFO  21:00:42,690 - #50 char
+INFO  21:00:42,690 - #50 pet
+INFO  21:00:42,690 - #46 =
+INFO  21:00:42,690 - #48 p
+INFO  21:00:42,690 - #35 ;
+INFO  21:00:42,690 - #50 int
+INFO  21:00:42,691 - #50 y
+INFO  21:00:42,691 - #35 ;
+INFO  21:00:42,692 - #41 {
+INFO  21:00:42,692 - #15 void
+INFO  21:00:42,692 - #50 main
+INFO  21:00:42,692 - #39 (
+INFO  21:00:42,692 - #40 )
+INFO  21:00:42,692 - #50 int
+INFO  21:00:42,693 - #50 x
+INFO  21:00:42,693 - #35 ;
+INFO  21:00:42,693 - #50 int
+INFO  21:00:42,693 - #50 z
+INFO  21:00:42,693 - #37 ,
+INFO  21:00:42,693 - #50 a
+INFO  21:00:42,693 - #37 ,
+INFO  21:00:42,693 - #50 b
+INFO  21:00:42,693 - #37 ,
+INFO  21:00:42,694 - #50 c
+INFO  21:00:42,694 - #35 ;
+INFO  21:00:42,694 - #50 char
+INFO  21:00:42,694 - #50 d
+INFO  21:00:42,694 - #35 ;
+INFO  21:00:42,694 - #50 bool
+INFO  21:00:42,694 - #50 bo
+INFO  21:00:42,694 - #35 ;
+INFO  21:00:42,694 - #41 {
+INFO  21:00:42,694 - #50 x
+INFO  21:00:42,694 - #46 =
+INFO  21:00:42,695 - #34 -
+INFO  21:00:42,695 - #49 10
+INFO  21:00:42,695 - #35 ;
+INFO  21:00:42,696 - #50 bo
+INFO  21:00:42,696 - #46 =
+INFO  21:00:42,696 - #47 true
+INFO  21:00:42,696 - #35 ;
+INFO  21:00:42,696 - #50 d
+INFO  21:00:42,696 - #46 =
+INFO  21:00:42,696 - #48 a
+INFO  21:00:42,696 - #35 ;
+INFO  21:00:42,697 - #50 z
+INFO  21:00:42,697 - #46 =
+INFO  21:00:42,697 - #50 x
+INFO  21:00:42,697 - #32 +
+INFO  21:00:42,697 - #49 1
+INFO  21:00:42,698 - #35 ;
+INFO  21:00:42,698 - #50 z
+INFO  21:00:42,698 - #31 ++
+INFO  21:00:42,699 - #35 ;
+INFO  21:00:42,699 - #50 y
+INFO  21:00:42,699 - #46 =
+INFO  21:00:42,699 - #49 12345
+INFO  21:00:42,699 - #35 ;
+INFO  21:00:42,699 - #50 a
+INFO  21:00:42,699 - #46 =
+INFO  21:00:42,700 - #49 10
+INFO  21:00:42,700 - #20 *
+INFO  21:00:42,700 - #49 2
+INFO  21:00:42,701 - #35 ;
+INFO  21:00:42,701 - #50 b
+INFO  21:00:42,701 - #46 =
+INFO  21:00:42,701 - #50 a
+INFO  21:00:42,701 - #21 /
+INFO  21:00:42,701 - #49 3
+INFO  21:00:42,702 - #35 ;
+INFO  21:00:42,702 - #50 c
+INFO  21:00:42,702 - #46 =
+INFO  21:00:42,702 - #50 a
+INFO  21:00:42,702 - #22 %
+INFO  21:00:42,702 - #49 3
+INFO  21:00:42,702 - #35 ;
+INFO  21:00:42,702 - #50 x
+INFO  21:00:42,702 - #46 =
+INFO  21:00:42,703 - #49 10
+INFO  21:00:42,703 - #32 +
+INFO  21:00:42,703 - #39 (
+INFO  21:00:42,703 - #50 a
+INFO  21:00:42,703 - #32 +
+INFO  21:00:42,703 - #49 9
+INFO  21:00:42,703 - #40 )
+INFO  21:00:42,703 - #21 /
+INFO  21:00:42,703 - #50 c
+INFO  21:00:42,703 - #20 *
+INFO  21:00:42,703 - #50 a
+INFO  21:00:42,703 - #34 -
+INFO  21:00:42,703 - #49 1
+INFO  21:00:42,704 - #35 ;
+INFO  21:00:42,704 - #50 a
+INFO  21:00:42,704 - #33 --
+INFO  21:00:42,704 - #35 ;
+INFO  21:00:42,704 - #12 print
+INFO  21:00:42,704 - #39 (
+INFO  21:00:42,704 - #49 1
+INFO  21:00:42,704 - #40 )
+INFO  21:00:42,704 - #35 ;
+INFO  21:00:42,704 - #12 print
+INFO  21:00:42,704 - #39 (
+INFO  21:00:42,705 - #50 d
+INFO  21:00:42,705 - #40 )
+INFO  21:00:42,705 - #35 ;
+INFO  21:00:42,705 - #12 print
+INFO  21:00:42,705 - #39 (
+INFO  21:00:42,705 - #50 a
+INFO  21:00:42,705 - #40 )
+INFO  21:00:42,705 - #35 ;
+INFO  21:00:42,705 - #12 print
+INFO  21:00:42,705 - #39 (
+INFO  21:00:42,705 - #50 b
+INFO  21:00:42,705 - #40 )
+INFO  21:00:42,705 - #35 ;
+INFO  21:00:42,705 - #12 print
+INFO  21:00:42,705 - #39 (
+INFO  21:00:42,705 - #50 c
+INFO  21:00:42,705 - #40 )
+INFO  21:00:42,706 - #35 ;
+INFO  21:00:42,706 - #13 read
+INFO  21:00:42,706 - #39 (
+INFO  21:00:42,706 - #50 x
+INFO  21:00:42,706 - #40 )
+INFO  21:00:42,706 - #35 ;
+INFO  21:00:42,706 - #13 read
+INFO  21:00:42,706 - #39 (
+INFO  21:00:42,706 - #50 d
+INFO  21:00:42,706 - #40 )
+INFO  21:00:42,706 - #35 ;
+INFO  21:00:42,706 - #12 print
+INFO  21:00:42,706 - #39 (
+INFO  21:00:42,706 - #50 x
+INFO  21:00:42,706 - #40 )
+INFO  21:00:42,706 - #35 ;
+INFO  21:00:42,706 - #12 print
+INFO  21:00:42,706 - #39 (
+INFO  21:00:42,706 - #50 z
+INFO  21:00:42,706 - #40 )
+INFO  21:00:42,707 - #35 ;
+INFO  21:00:42,707 - #12 print
+INFO  21:00:42,707 - #39 (
+INFO  21:00:42,707 - #34 -
+INFO  21:00:42,707 - #49 5
+INFO  21:00:42,707 - #20 *
+INFO  21:00:42,707 - #39 (
+INFO  21:00:42,707 - #49 2
+INFO  21:00:42,707 - #32 +
+INFO  21:00:42,707 - #49 3
+INFO  21:00:42,707 - #40 )
+INFO  21:00:42,707 - #40 )
+INFO  21:00:42,707 - #35 ;
+INFO  21:00:42,707 - #12 print
+INFO  21:00:42,707 - #39 (
+INFO  21:00:42,707 - #50 y
+INFO  21:00:42,707 - #40 )
+INFO  21:00:42,707 - #35 ;
+INFO  21:00:42,707 - #12 print
+INFO  21:00:42,707 - #39 (
+INFO  21:00:42,707 - #50 nula
+INFO  21:00:42,707 - #40 )
+INFO  21:00:42,707 - #35 ;
+INFO  21:00:42,707 - #12 print
+INFO  21:00:42,707 - #39 (
+INFO  21:00:42,707 - #50 pet
+INFO  21:00:42,708 - #40 )
+INFO  21:00:42,708 - #35 ;
+INFO  21:00:42,708 - #12 print
+INFO  21:00:42,708 - #39 (
+INFO  21:00:42,708 - #50 bo
+INFO  21:00:42,708 - #40 )
+INFO  21:00:42,708 - #35 ;
+INFO  21:00:42,708 - #14 return
+INFO  21:00:42,708 - #35 ;
+INFO  21:00:42,708 - #42 }
+INFO  21:00:42,708 - #42 }
+INFO  21:00:42,720 - Deklarisana konstanta nula sa vrednoscu: 0 na liniji 4
+INFO  21:00:42,720 - Deklarisana konstanta jedan sa vrednoscu: 1 na liniji 5
+INFO  21:00:42,720 - Deklarisana konstanta pet sa vrednoscu: p na liniji 6
+INFO  21:00:42,720 - Deklarisana promenljiva y tipa int na liniji 7
+INFO  21:00:42,720 - Obradjuje se funkcija main na liniji 9
+INFO  21:00:42,720 - Deklarisana promenljiva x tipa int na liniji 10
+INFO  21:00:42,720 - Deklarisana promenljiva z tipa int na liniji 11
+INFO  21:00:42,720 - Deklarisana promenljiva a tipa int na liniji 11
+INFO  21:00:42,720 - Deklarisana promenljiva b tipa int na liniji 11
+INFO  21:00:42,721 - Deklarisana promenljiva c tipa int na liniji 11
+INFO  21:00:42,721 - Deklarisana promenljiva d tipa char na liniji 12
+INFO  21:00:42,721 - Deklarisana promenljiva bo tipa bool na liniji 13
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: , 0, 1 
+Prog testProgram: notype, 0, 1 
+   Con nula: int, 0, 0 
+   Con jedan: int, 1, 0 
+   Con pet: char, 112, 0 
+   Var y: int, 0, 0 
+   Meth main: notype, 0, 0 
+      Var x: int, 0, 1 
+      Var z: int, 1, 1 
+      Var a: int, 2, 1 
+      Var b: int, 3, 1 
+      Var c: int, 4, 1 
+      Var d: char, 5, 1 
+      Var bo: , 6, 1 
+
+
+
+INFO  21:00:42,722 - Generating bytecode file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testCodeGenerator1.obj
+INFO  21:00:42,726 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,380 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+// import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, BREAK, CLASS, ENUM, ELSE, CONST, IF, DO, WHILE, NEW, PRINT, READ, RETURN, VOID; 
+terminal EXTENDS, CONTINUE, THIS, FOREACH;
+terminal STAR, DIV, MOD, EQUAL, NOTEQUAL, GREATEREQU, GREATER, LESS, LESSEQU, AND, OR, INC, PLUS;
+terminal DEC, MINUS, SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE, LBRACKET, RBRACKET;
+terminal ARROW, ASSIGN;
+terminal String BOOL;
+terminal Character CHARACTER;
+terminal Integer NUMBER ;
+terminal String IDENT ;
+
+nonterminal declaration_list, declaration_part, constDeclList, varDeclList;
+nonterminal varDeclListSemi, classDecl;
+nonterminal typeExtended, methodDeclarationList, formPars;
+nonterminal parameterList, parameter, statementList, statement, designatorStatement;
+nonterminal actPars, actParamList;
+nonterminal addop, mulop, label, matched, unmatched, condition, condFact, condTerm;
+nonterminal relop, assignop, constrMethDecl, constructorDeclarationList, constructorDeclaration;
+nonterminal	classDeclItemList, constrMethDeclItemList;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj progName, program, varDeclBracket, varDeclNoBracket;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj varDecl, constDecl, methodDeclaration, methodTypeName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj designator, designatorName, designatorOpt;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct type, returnType, factor, term, addopTerm, expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct designatorList;
+
+
+program ::= (ProgramMethods) PROG progName:p declaration_list LBRACE methodDeclarationList RBRACE
+			|
+			(ProgramNoMethods) PROG progName:p declaration_list LBRACE RBRACE
+			;
+
+progName ::= (ProgName) IDENT:pName 
+			;
+
+declaration_list ::= (Declarations) declaration_list declaration_part
+			|
+			/* epsilon */
+			;
+
+declaration_part ::= (ConstDeclarations) constDeclList SEMI
+			|
+			(VarDeclarations) varDeclList SEMI
+			|
+			(ClassDeclaration) classDecl	 
+			|
+			(ErrorDeclarationComma) error COMMA
+			{: parser.log.debug("Uspesan oporavak od greske pri deklaraciji do ,."); :}
+			|
+			(ErrorDeclarationSemi) error SEMI
+			{: parser.log.debug("Uspesan oporavak od greske pri deklaraciji do ;."); :}
+			;
+
+constDeclList ::= (Const_dec_list) constDeclList COMMA constDecl
+			|
+			(Const_dec) CONST type:constType constDecl
+			;
+
+constDecl ::= (ConstDeclNumber) IDENT:constName ASSIGN NUMBER:val
+			|
+			(ConstDeclChar) IDENT:constName ASSIGN CHARACTER:val
+			|
+			(ConstDeclBool) IDENT:constName ASSIGN BOOL:val
+			;
+
+varDeclList ::= (Var_dec_list) varDeclList COMMA varDecl:varDecl
+			|
+			(Var_dec) type:varType varDecl:varDecl
+			;
+
+varDecl ::= (VarDecl_noBracket) varDeclNoBracket:varDecl
+			|
+			(VarDecl_Bracket) varDeclBracket:varDecl
+			;
+
+varDeclNoBracket ::= (VarDeclNoBracket) IDENT:varName
+			;
+
+varDeclBracket ::= (VarDeclBracket) IDENT:varName LBRACKET RBRACKET
+			;
+			
+varDeclListSemi ::= (VarDeclList_Semi) varDeclListSemi varDeclList SEMI
+			|
+			/* epsilon */
+			;
+			
+classDecl ::= (ClassDecl) CLASS IDENT:className typeExtended LBRACE classDeclItemList RBRACE
+			;
+			
+classDeclItemList ::= (ClassBothItems) varDeclListSemi constrMethDecl
+			|
+			(ClassVarItem) varDeclListSemi 
+			;
+			
+constrMethDecl ::= (ConstrMeth_Decl) LBRACE constrMethDeclItemList RBRACE
+			;
+			
+typeExtended ::= (Type_Extended) EXTENDS type:typeExtended
+			|
+			/* epsilon */
+			;
+			
+type ::= (Type) IDENT:typeName
+			;
+
+constrMethDeclItemList ::= (ConstrMethBothItems) constructorDeclarationList methodDeclarationList
+			|
+			(ConstrMethMethDeclItem) methodDeclarationList
+			|
+			(ConstrMethConstrDeclItem) constructorDeclarationList
+			|
+			/* epsilon */
+			;
+
+constructorDeclarationList ::= (Constructors) constructorDeclarationList constructorDeclaration
+			|
+			(Constructor) constructorDeclaration
+			;
+			
+constructorDeclaration ::= (ConstructorDeclaration) IDENT:className LPAREN formPars RPAREN 
+			varDeclListSemi LBRACE statementList RBRACE
+			;
+
+methodDeclarationList ::= (Methods) methodDeclarationList methodDeclaration
+			|
+			(Method) methodDeclaration
+			;
+
+methodDeclaration ::= (MethodDeclaration) methodTypeName LPAREN formPars RPAREN 
+			varDeclListSemi LBRACE statementList RBRACE
+			;
+			
+methodTypeName ::= (MethodRetTypeName) returnType:returnType IDENT:methName
+			|
+			(MethodVoidName) VOID IDENT:methName
+			;
+			
+returnType ::= (ReturnType) type:typeName
+			;
+
+formPars ::= (FormParameters) parameterList
+			|
+			/* epsilon */
+			;
+			
+parameterList ::= (FormalParameters) parameterList COMMA parameter
+			|
+			(FormalParameter) parameter
+			;
+			
+parameter ::= (ScalarParameter) type:paramType IDENT:paramName
+			|
+			(ArrayParameter) type:paramType IDENT:paramName LBRACKET RBRACKET
+			;
+
+statementList ::= (Statements) statementList statement
+			|
+			/* epsilon */
+			;
+
+statement ::= (MatchedStmt) matched | (UnmachedStmt) unmatched
+			;
+			
+unmatched ::= (UnmatchedIf) IF LPAREN condition RPAREN statement 
+			| 
+			(UnmatchedIfElse) IF LPAREN condition RPAREN matched ELSE unmatched
+			;
+	
+matched ::= (DesignatorStatement_Statement) designatorStatement SEMI
+			|
+			(Matched_If_Statement) IF LPAREN condition RPAREN matched ELSE matched
+			|
+			(While_Statement) WHILE LPAREN condition RPAREN matched
+			|
+			(Break_Statement) BREAK SEMI
+			|
+			(Continue_Statement) CONTINUE SEMI
+			|
+			(Return_Expr_Statement) RETURN expr:e SEMI
+			|
+			(Return_NoExpr_Statement) RETURN SEMI
+			|
+			(Read_Statement) READ LPAREN designator RPAREN SEMI
+			|
+			(Print_NONUM_Statement) PRINT LPAREN expr:expr RPAREN SEMI
+			|
+			(Print_NUM_Statement) PRINT LPAREN expr COMMA NUMBER RPAREN SEMI
+			|
+			(StatementList_Statement) LBRACE statementList RBRACE
+			|
+			(ForEach_Statement) designator DOT FOREACH LPAREN IDENT ARROW statement RPAREN SEMI
+//			|
+//			(ErrAssignment_Statement) error SEMI
+//			{: parser.log.debug("Uspesan oporavak od greske u izrazu za dodelu vrednosti."); :}
+			;
+
+condition ::= (Condition_Term) condTerm 
+			|
+			(Condition_Terms) condition OR condTerm
+			;
+			
+condTerm ::= (Condition_Fact) condFact
+			|
+			(Condition_Facts) condTerm AND condFact
+			;
+
+condFact ::= (Condition_Expr) expr
+			|
+			(Condition_Relop_Expr) expr relop expr
+			;
+			  			
+designatorStatement ::= (AssignStatement) designator:d ASSIGN expr:e
+			|
+			(FuncCallStatement) designator LPAREN actPars RPAREN 
+			|
+			(IncStatement) designator:designator INC
+			|
+			(DecStatement) designator:designator DEC
+			|
+			(ArrayAssignStatement) LBRACKET designatorList:designatorList RBRACKET ASSIGN designator:designator
+			;
+			
+designatorList ::= (Designator_List) designatorList:list COMMA designatorOpt:designator
+			|
+			(Designator_Opt) designatorOpt:designator
+			;
+	
+designatorOpt ::= (DesignatorOptional) designator:designator
+			|
+			(DesignatorOptionalNone)/* epsilon */
+			;
+
+designator ::= (Designator_Ident) designatorName:name
+			|
+			(Designator_Dot_Ident) designator:designator DOT IDENT:designatorName
+			|
+			(Designator_ArrayElem) designatorName:name LBRACKET expr:expr RBRACKET
+			|
+			(Designator_THIS) THIS			
+			;
+			
+designatorName ::= (DesignatorName) IDENT:designatorName
+			;
+
+actPars ::= (Actuals) actParamList
+			|
+			/* epsilon */
+			;
+
+actParamList ::= (ActParameter) expr
+			|
+			(ActParameters) actParamList COMMA expr
+			;
+
+expr ::= (NegativeExpr) MINUS addopTerm:addopTerm
+			|
+			(PositiveExpr) addopTerm:addopTerm
+			|
+			(ExprError) error
+			{: parser.log.debug("Uspesan oporavak od greske u izrazu za dodelu vrednosti."); :}
+			;
+			
+addopTerm ::= (Addop_Terms) addopTerm:addopTerm addop term:term
+			|
+			(Addop_Term) term:term
+			;
+			
+term ::= (Term_Factor) factor:factor
+			|
+			(Term_Factors) term:term mulop factor:factor
+			;
+
+factor ::= (Factor_Designator) designator:designator
+			|
+			(Factor_Designator_Pars) designator:designator LPAREN actPars RPAREN
+			|
+			(Factor_Number) NUMBER
+			|
+			(Factor_Character) CHARACTER
+			|
+			(Factor_Bool) BOOL
+			|
+			(Factor_New_Array) NEW type:type LBRACKET expr:expr RBRACKET
+			|
+			(Factor_New_Pars) NEW type:type LPAREN actPars:pars RPAREN
+			|
+			(Factor_Expr) LPAREN expr:expr RPAREN
+			;
+
+assignop ::= (Assign_Operation) ASSIGN
+			;
+
+relop ::= 	(Rel_Operation_EQUAL) EQUAL
+			|
+			(Rel_Operation_NOTEQUAL) NOTEQUAL
+			|
+			(Rel_Operation_GREATER) GREATER
+			|
+			(Rel_Operation_GREATEREQU) GREATEREQU
+			|
+			(Rel_Operation_LESS) LESS
+			|
+			(Rel_Operation_LESSEQU) LESSEQU
+			;
+			
+addop ::= (Add_Operation) PLUS
+			|
+			(SUB_Operation) MINUS
+			;
+			
+mulop ::= (Multiply) STAR
+			|
+			(Divide) DIV
+			|
+			(Module) MOD
+			;
+			
+label ::= (Label) IDENT:labelName
+			;
+
+
+
+
+

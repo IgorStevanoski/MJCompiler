@@ -1,0 +1,191 @@
+INFO  21:01:43,561 - Compiling source file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testCodeGenerator2.mj
+INFO  21:01:43,599 - #2 program
+INFO  21:01:43,599 - #50 testProgram
+INFO  21:01:43,599 - #7 const
+INFO  21:01:43,600 - #50 int
+INFO  21:01:43,600 - #50 nula
+INFO  21:01:43,601 - #46 =
+INFO  21:01:43,601 - #49 0
+INFO  21:01:43,601 - #35 ;
+INFO  21:01:43,601 - #50 int
+INFO  21:01:43,602 - #50 y
+INFO  21:01:43,602 - #35 ;
+INFO  21:01:43,602 - #41 {
+INFO  21:01:43,603 - #15 void
+INFO  21:01:43,603 - #50 main
+INFO  21:01:43,603 - #39 (
+INFO  21:01:43,603 - #40 )
+INFO  21:01:43,603 - #50 int
+INFO  21:01:43,604 - #50 a
+INFO  21:01:43,604 - #35 ;
+INFO  21:01:43,604 - #50 int
+INFO  21:01:43,604 - #50 x
+INFO  21:01:43,604 - #43 [
+INFO  21:01:43,605 - #44 ]
+INFO  21:01:43,605 - #35 ;
+INFO  21:01:43,605 - #50 char
+INFO  21:01:43,605 - #50 c
+INFO  21:01:43,605 - #43 [
+INFO  21:01:43,605 - #44 ]
+INFO  21:01:43,605 - #35 ;
+INFO  21:01:43,605 - #50 bool
+INFO  21:01:43,606 - #50 b
+INFO  21:01:43,606 - #43 [
+INFO  21:01:43,606 - #44 ]
+INFO  21:01:43,606 - #35 ;
+INFO  21:01:43,606 - #41 {
+INFO  21:01:43,606 - #50 x
+INFO  21:01:43,606 - #46 =
+INFO  21:01:43,607 - #11 new
+INFO  21:01:43,607 - #50 int
+INFO  21:01:43,607 - #43 [
+INFO  21:01:43,607 - #49 10
+INFO  21:01:43,607 - #44 ]
+INFO  21:01:43,607 - #35 ;
+INFO  21:01:43,607 - #50 c
+INFO  21:01:43,608 - #46 =
+INFO  21:01:43,608 - #11 new
+INFO  21:01:43,608 - #50 char
+INFO  21:01:43,608 - #43 [
+INFO  21:01:43,608 - #49 5
+INFO  21:01:43,608 - #44 ]
+INFO  21:01:43,608 - #35 ;
+INFO  21:01:43,608 - #50 b
+INFO  21:01:43,608 - #46 =
+INFO  21:01:43,609 - #11 new
+INFO  21:01:43,609 - #50 bool
+INFO  21:01:43,609 - #43 [
+INFO  21:01:43,609 - #49 3
+INFO  21:01:43,609 - #44 ]
+INFO  21:01:43,609 - #35 ;
+INFO  21:01:43,609 - #50 x
+INFO  21:01:43,609 - #43 [
+INFO  21:01:43,609 - #49 0
+INFO  21:01:43,609 - #44 ]
+INFO  21:01:43,609 - #46 =
+INFO  21:01:43,609 - #49 5
+INFO  21:01:43,609 - #35 ;
+INFO  21:01:43,610 - #50 x
+INFO  21:01:43,610 - #43 [
+INFO  21:01:43,610 - #49 1
+INFO  21:01:43,610 - #44 ]
+INFO  21:01:43,610 - #46 =
+INFO  21:01:43,610 - #49 1
+INFO  21:01:43,610 - #35 ;
+INFO  21:01:43,610 - #50 x
+INFO  21:01:43,610 - #43 [
+INFO  21:01:43,610 - #50 x
+INFO  21:01:43,610 - #43 [
+INFO  21:01:43,610 - #49 1
+INFO  21:01:43,610 - #44 ]
+INFO  21:01:43,610 - #32 +
+INFO  21:01:43,611 - #49 1
+INFO  21:01:43,611 - #44 ]
+INFO  21:01:43,612 - #46 =
+INFO  21:01:43,612 - #49 10
+INFO  21:01:43,612 - #32 +
+INFO  21:01:43,612 - #50 x
+INFO  21:01:43,612 - #43 [
+INFO  21:01:43,612 - #49 0
+INFO  21:01:43,612 - #44 ]
+INFO  21:01:43,612 - #20 *
+INFO  21:01:43,612 - #50 x
+INFO  21:01:43,613 - #43 [
+INFO  21:01:43,613 - #49 1
+INFO  21:01:43,613 - #34 -
+INFO  21:01:43,614 - #49 1
+INFO  21:01:43,614 - #44 ]
+INFO  21:01:43,614 - #35 ;
+INFO  21:01:43,614 - #50 c
+INFO  21:01:43,614 - #43 [
+INFO  21:01:43,614 - #49 0
+INFO  21:01:43,614 - #44 ]
+INFO  21:01:43,615 - #46 =
+INFO  21:01:43,615 - #48 c
+INFO  21:01:43,615 - #35 ;
+INFO  21:01:43,615 - #50 b
+INFO  21:01:43,615 - #43 [
+INFO  21:01:43,615 - #49 0
+INFO  21:01:43,615 - #44 ]
+INFO  21:01:43,615 - #46 =
+INFO  21:01:43,615 - #47 true
+INFO  21:01:43,615 - #35 ;
+INFO  21:01:43,615 - #12 print
+INFO  21:01:43,615 - #39 (
+INFO  21:01:43,615 - #50 x
+INFO  21:01:43,615 - #43 [
+INFO  21:01:43,615 - #49 0
+INFO  21:01:43,615 - #44 ]
+INFO  21:01:43,615 - #40 )
+INFO  21:01:43,615 - #35 ;
+INFO  21:01:43,616 - #12 print
+INFO  21:01:43,616 - #39 (
+INFO  21:01:43,616 - #50 x
+INFO  21:01:43,616 - #43 [
+INFO  21:01:43,616 - #49 1
+INFO  21:01:43,616 - #44 ]
+INFO  21:01:43,616 - #40 )
+INFO  21:01:43,617 - #35 ;
+INFO  21:01:43,617 - #12 print
+INFO  21:01:43,617 - #39 (
+INFO  21:01:43,617 - #50 x
+INFO  21:01:43,617 - #43 [
+INFO  21:01:43,617 - #49 2
+INFO  21:01:43,618 - #44 ]
+INFO  21:01:43,618 - #40 )
+INFO  21:01:43,618 - #35 ;
+INFO  21:01:43,618 - #12 print
+INFO  21:01:43,618 - #39 (
+INFO  21:01:43,618 - #50 c
+INFO  21:01:43,618 - #43 [
+INFO  21:01:43,618 - #49 0
+INFO  21:01:43,619 - #44 ]
+INFO  21:01:43,619 - #40 )
+INFO  21:01:43,619 - #35 ;
+INFO  21:01:43,619 - #12 print
+INFO  21:01:43,619 - #39 (
+INFO  21:01:43,619 - #50 b
+INFO  21:01:43,619 - #43 [
+INFO  21:01:43,619 - #49 0
+INFO  21:01:43,619 - #44 ]
+INFO  21:01:43,619 - #40 )
+INFO  21:01:43,619 - #35 ;
+INFO  21:01:43,619 - #14 return
+INFO  21:01:43,619 - #35 ;
+INFO  21:01:43,619 - #42 }
+INFO  21:01:43,620 - #42 }
+INFO  21:01:43,626 - Deklarisana konstanta nula sa vrednoscu: 0 na liniji 4
+INFO  21:01:43,627 - Deklarisana promenljiva y tipa int na liniji 5
+INFO  21:01:43,627 - Obradjuje se funkcija main na liniji 7
+INFO  21:01:43,627 - Deklarisana promenljiva a tipa int na liniji 8
+INFO  21:01:43,627 - Deklarisana promenljiva x na liniji 9
+INFO  21:01:43,627 - Deklarisana promenljiva c na liniji 10
+INFO  21:01:43,627 - Deklarisana promenljiva b na liniji 11
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: , 0, 1 
+Prog testProgram: notype, 0, 1 
+   Con nula: int, 0, 0 
+   Var y: int, 0, 0 
+   Meth main: notype, 0, 0 
+      Var a: int, 0, 1 
+      Var x: Arr of int, 1, 1 
+      Var c: Arr of char, 2, 1 
+      Var b: Arr of , 3, 1 
+
+
+
+INFO  21:01:43,628 - Generating bytecode file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testCodeGenerator2.obj
+INFO  21:01:43,641 - Parsiranje uspesno zavrseno!

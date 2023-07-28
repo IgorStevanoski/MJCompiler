@@ -1,0 +1,46 @@
+INFO  20:53:12,640 - Compiling source file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testParserF1.mj
+INFO  20:53:12,678 - #2 program
+INFO  20:53:12,679 - #50 testParser
+INFO  20:53:12,679 - #7 const
+INFO  20:53:12,679 - #50 int
+INFO  20:53:12,679 - #50 x
+INFO  20:53:12,680 - #35 ;
+ERROR 20:53:12,680 - 
+Sintaksna greska na liniji 4
+INFO  20:53:12,680 - #50 int
+INFO  20:53:12,681 - #50 y
+INFO  20:53:12,681 - #37 ,
+DEBUG 20:53:12,681 - Uspesan oporavak od greske pri deklaraciji do ;.
+INFO  20:53:12,682 - #50 a
+INFO  20:53:12,682 - #43 [
+INFO  20:53:12,683 - #44 ]
+INFO  20:53:12,683 - #37 ,
+INFO  20:53:12,683 - #50 b
+INFO  20:53:12,683 - #46 =
+ERROR 20:53:12,683 - 
+Sintaksna greska na liniji 5
+INFO  20:53:12,683 - #49 5
+INFO  20:53:12,684 - #35 ;
+INFO  20:53:12,684 - #50 char
+INFO  20:53:12,684 - #50 ch
+INFO  20:53:12,684 - #35 ;
+DEBUG 20:53:12,684 - Uspesan oporavak od greske pri deklaraciji do ;.
+INFO  20:53:12,684 - #41 {
+INFO  20:53:12,684 - #15 void
+INFO  20:53:12,685 - #50 main
+INFO  20:53:12,685 - #39 (
+INFO  20:53:12,685 - #40 )
+INFO  20:53:12,685 - #41 {
+INFO  20:53:12,686 - #50 a
+INFO  20:53:12,686 - #46 =
+INFO  20:53:12,686 - #34 -
+INFO  20:53:12,687 - #35 ;
+ERROR 20:53:12,687 - 
+Sintaksna greska na liniji 10
+INFO  20:53:12,687 - #14 return
+INFO  20:53:12,687 - #49 1
+INFO  20:53:12,687 - #35 ;
+DEBUG 20:53:12,687 - Uspesan oporavak od greske u izrazu za dodelu vrednosti.
+INFO  20:53:12,688 - #42 }
+INFO  20:53:12,688 - #42 }
+ERROR 20:53:12,689 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,16 @@
+// fatalna greska: fali extends Klasa
+
+program testParser
+	const int x = 5; 
+	int a[];
+	char ch;
+
+	class Klasa extends {
+	
+	}
+{
+	void main() {		
+		ch = 'c';
+		print(c);
+	}
+}

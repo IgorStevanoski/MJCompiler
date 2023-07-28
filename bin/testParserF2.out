@@ -1,0 +1,43 @@
+INFO  20:54:20,700 - Compiling source file: D:\fax D\PP1\Domaci\workspace\MJCompiler\test\testParserF2.mj
+INFO  20:54:20,738 - #2 program
+INFO  20:54:20,738 - #50 testParser
+INFO  20:54:20,739 - #7 const
+INFO  20:54:20,739 - #50 int
+INFO  20:54:20,739 - #50 x
+INFO  20:54:20,740 - #46 =
+INFO  20:54:20,740 - #49 5
+INFO  20:54:20,740 - #35 ;
+INFO  20:54:20,741 - #50 int
+INFO  20:54:20,741 - #50 a
+INFO  20:54:20,741 - #43 [
+INFO  20:54:20,741 - #44 ]
+INFO  20:54:20,741 - #35 ;
+INFO  20:54:20,742 - #50 char
+INFO  20:54:20,742 - #50 ch
+INFO  20:54:20,742 - #35 ;
+INFO  20:54:20,743 - #4 class
+INFO  20:54:20,743 - #50 Klasa
+INFO  20:54:20,743 - #16 extends
+INFO  20:54:20,743 - #41 {
+ERROR 20:54:20,743 - 
+Sintaksna greska na liniji 8
+INFO  20:54:20,743 - #42 }
+INFO  20:54:20,743 - #41 {
+INFO  20:54:20,744 - #15 void
+INFO  20:54:20,744 - #50 main
+INFO  20:54:20,744 - #39 (
+INFO  20:54:20,745 - #40 )
+INFO  20:54:20,745 - #41 {
+INFO  20:54:20,745 - #50 ch
+INFO  20:54:20,745 - #46 =
+INFO  20:54:20,745 - #48 c
+INFO  20:54:20,745 - #35 ;
+INFO  20:54:20,745 - #12 print
+INFO  20:54:20,745 - #39 (
+INFO  20:54:20,745 - #50 c
+INFO  20:54:20,745 - #40 )
+INFO  20:54:20,745 - #35 ;
+INFO  20:54:20,745 - #42 }
+INFO  20:54:20,745 - #42 }
+ERROR 20:54:20,745 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16
+ERROR 20:54:20,745 - Parsiranje NIJE uspesno zavrseno!

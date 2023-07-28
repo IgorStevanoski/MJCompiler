@@ -1,0 +1,57 @@
+program testParser
+	const int x = 5; 
+	int y, a[], b;
+	char ch;
+	const char ca = 'a', cb = 'b';
+
+	class Klasa extends NadKlasa {
+	int a, b;
+	bool b;
+		{
+		int met( int a[], int b) 
+			int c;
+			{
+				c = a[0] + b;
+				return c;
+			}
+		}
+	}
+{
+
+	int k () int c; {
+		c = 2;
+		print(0);		
+		return c + 2 + 2 * 4 / 2 % ( -6 - 3 );
+	}
+
+	void main() {		
+		read(y);
+		print(x);
+				
+		k();
+		y = 4 + 9 + k();
+		
+		if ( a >= b || c == d && a <= b && b > c ) {
+			aa[0] = 'a';
+			nes = true;
+			
+			while ( a < 100 ) {
+				if ( a == 50 ) {
+					a = a + 20;
+					continue;
+				} else {
+					b--;
+					break;
+				}
+				a++;
+			}
+		}
+		
+		a = new int[100];
+		
+		return 1 + a;
+	}
+}
+
+// 
+

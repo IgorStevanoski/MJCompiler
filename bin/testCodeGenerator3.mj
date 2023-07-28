@@ -1,0 +1,33 @@
+//rad sa [ ... ] = ... izrazom
+
+program testProgram
+	int niz[];
+{
+
+	void main()	
+	int niz2[];
+	int a, b, c;
+	{
+		niz = new int[5];
+		niz2 = new int[5];
+		niz[0] = 10;
+		niz[1] = 11;
+		niz[2] = 12;
+		niz[3] = 13;
+		niz[4] = 14;
+			
+		//[niz2[niz2[2]],,niz2[1]] = niz;
+		[niz2[0],,niz2[3],niz2[4],niz2[1]] = niz;
+		
+		print(niz2[0]);
+		print(niz2[1]);
+		print(niz2[2]);
+		print(niz2[3]);
+		print(niz2[4]);
+		print(a);
+		print(b);
+		print(c);
+			
+		return;
+	}
+}
